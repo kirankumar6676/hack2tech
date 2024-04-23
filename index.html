@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/portfolio.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/client.css" />
+    <link rel="stylesheet" href="assets/css/sponsors.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -35,6 +36,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/team.css" />
+    <!-- <style>
+      .logos-slide p{
+        color: red;
+      }
+    </style> -->
+ 
+ 
   </head>
 
   <body>
@@ -1023,8 +1031,8 @@
       </section>
       <!-- Blog Area End -->
 
-      <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
+      <!-- ======= Start Sponsrsohip Section ======= -->
+    <section id="sponsors" class="sponsors">
       <div class="container-clients" data-aos="zoom-in">
         <div class="row justify-content-center" style="padding-top: 50px">
           <div class="col-lg-5 col-md-8">
@@ -1033,36 +1041,37 @@
             </div>
           </div>
         </div>
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt="Innate_Studio">
-            </div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid"
-                alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="assets/img/download.png" class="img-fluid" alt=""></div>
-
+        <div class="logos">
+          <div class="logos-slide">
+            
+            <img src="assets/img/vansan-systems.jpeg" alt="vansan">
+            <img src="assets/img/al-arfag.jpeg" alt="al-arfag">
+            <img src="assets/img/Digilabs_Logo.png" alt="Digilabs_Logo">
+            <img src="assets/img/fidrox.jpeg" alt="fidrox">
+            <img src="assets/img/ibm_cloud (2).png" alt="ibm_cloud">
+            <img src="assets/img/Star_Logo.png" alt="Star_Logo">
+            
           </div>
-          <div class="swiper-pagination"></div>
+
+          <!-- <div class="logos-slide">
+            
+            <img src="assets/img/vansan-systems.jpeg" alt="vansan">
+            <img src="assets/img/al-arfag.jpeg" alt="al-arfag">
+            <img src="assets/img/Digilabs_Logo.png" alt="Digilabs_Logo">
+            <img src="assets/img/fidrox.jpeg" alt="fidrox">
+            <img src="assets/img/ibm_cloud (2).png" alt="ibm_cloud">
+            <img src="assets/img/Star_Logo.png" alt="Star_Logo">
+            
+          </div> -->
         </div>
 
+        
+        
+
       </div>
-    </section> -->
+    </section>
     
-    <!-- End Clients Section -->
+    <!-- End  Sponsorship Section -->
 
 
       <!--  Coordinators sections start-->
@@ -1958,7 +1967,10 @@
     </div>
 
     <!-- JS here -->
-
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const filters = document.querySelectorAll("#portfolio-flters li");
